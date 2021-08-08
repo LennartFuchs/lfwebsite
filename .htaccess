@@ -1,0 +1,12 @@
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:HKFjZZkbvO
+ErrorDocument 404 /404.html
+ErrorDocument 400 /400.html
+ErrorDocument 500 /500.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE HKFjZZkbvO:ERRORPAGEID
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
